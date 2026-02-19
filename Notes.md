@@ -30,3 +30,22 @@
 - `Fast-forward` merge = master hadn't changed, Git just moved it forward
 - Deleting a branch does NOT delete your commits, just the label
 - Always switch TO master before merging a feature branch in
+
+## Phase 3 — History & Undoing Things
+
+| Command | What it does |
+|---|---|
+| `git diff` | See exactly what changed since last commit |
+| `git restore <file>` | Undo uncommitted changes |
+| `git restore --staged <file>` | Unstage a file |
+| `git reset --soft HEAD~1` | Remove commit, keep changes staged |
+| `git reset --mixed HEAD~1` | Remove commit, unstage changes |
+| `git reset --hard HEAD~1` | Remove commit AND delete changes ⚠️ |
+| `git revert <hash>` | Safely undo a commit, keeps history |
+
+### Key Concepts
+- Always use `git diff` before committing to review changes
+- `git restore` is permanent for uncommitted changes — be careful!
+- `git revert` = safe, keeps history, great for team projects
+- `git reset` = rewrites history, only use on local commits
+- HEAD~1 means "one commit behind where I am now"
