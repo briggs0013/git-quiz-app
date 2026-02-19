@@ -49,3 +49,19 @@
 - `git revert` = safe, keeps history, great for team projects
 - `git reset` = rewrites history, only use on local commits
 - HEAD~1 means "one commit behind where I am now"
+
+## Phase 4 — Remote Repositories
+
+| Command | What it does |
+|---|---|
+| `git remote add origin <url>` | Connect local repo to GitHub |
+| `git push` | Upload commits to GitHub |
+| `git push -u origin main` | Push and set default upstream |
+| `git pull` | Download and apply changes |
+| `git fetch` | Download without applying |
+
+### Key Concepts
+- `origin` = nickname for your GitHub remote URL
+- `git pull` = `git fetch` + `git merge` combined
+- Your entire commit history gets pushed to GitHub
+- Always `git pull` before starting work in a team!
