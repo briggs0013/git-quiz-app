@@ -18,6 +18,11 @@ questions = [
         "question": "What command shows your commit history?",
         "options": ["A) git history", "B) git status", "C) git log", "D) git show"],
         "answer": "C"
+    },
+    {
+        "question": "What command shows unstaged changes?",
+        "options": ["A) git diff", "B) git log", "C) git status", "D) git show"],
+        "answer": "A"
     }
 ]
 
