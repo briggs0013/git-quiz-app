@@ -1,8 +1,23 @@
 questions = [
-    {
+  {
         "question": "What command initializes a new Git repository?",
         "options": ["A) git start", "B) git init", "C) git new", "D) git create"],
         "answer": "B"
+    },
+    {
+        "question": "What command stages a file?",
+        "options": ["A) git commit", "B) git push", "C) git add", "D) git stage"],
+        "answer": "C"
+    },
+    {
+        "question": "What command saves a snapshot of staged files?",
+        "options": ["A) git save", "B) git commit", "C) git push", "D) git log"],
+        "answer": "B"
+    },
+    {
+        "question": "What command shows your commit history?",
+        "options": ["A) git history", "B) git status", "C) git log", "D) git show"],
+        "answer": "C"
     }
 ]
 
